@@ -18,6 +18,7 @@ public class ForumPostDTO {
     private String content;
     private Integer answerToPostId;
     private Boolean isBanned;
+    private Boolean isHidden;
     private Boolean isLike;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
