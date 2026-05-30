@@ -1,18 +1,25 @@
 package com.service.backend.chat.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
-public record ChatMessageResponse(
-        Long id,
-        Long groupId,
-        Long senderMemberId,
-        String senderFullName,
-        String senderAvatarUrl,
-        String content,
-        String messageType,
-        String metadata,
-        LocalDateTime createdAt,
-        LocalDateTime editedAt,
-        LocalDateTime deletedAt
-) {
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ChatMessageResponse {
+
+    private Long id;
+    private Long groupId;
+    private Long senderMemberId;
+    private String senderFullName;
+    private String senderAvatarUrl;
+    private String content;
+    private String messageType;
+    private String metadata;
+    private LocalDateTime createdAt;
+    private LocalDateTime editedAt;
+    private LocalDateTime deletedAt;
 }
